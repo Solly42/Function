@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex02 - parte 2</title>
+</head>
+<body>
+    
+    <script>
+        try
+        {
+            
+            function menorValor(num1, num2, num3) 
+            {
+                
+                if(num1 < num2 && num1 < num3)
+                {
+                    return num1;
+                }
+                
+                else 
+                {
+                    if(num2 < num1 && num2 < num3)
+                    {
+                        return num2;
+                    }
+                    
+                    else
+                    {
+                        if(num3 < num1 && num3 < num2)
+                        {
+                            return num3;
+                        }
+                    }
+                }
+                
+                
+                alert(menorValor(5,3,1))
+                
+            }   
+        }
+            // fim do try
+            catch(error)
+            {
+                alert("Erro: " + error)
+            }
+            
+        </script>
+        
+    </body>
+    </html>

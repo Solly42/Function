@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Média</title>
+</head>
+<body>
+    <script>
+        try
+        {
+            function notaFinal (n1,n2,n3,n4,n5)
+            {
+                var media4 =   (n1 + n2 + n3 + n4) / 4;
+                 
+                var media5 = (n1 + n2 + n3 + n4 + n5) / 5;
+                //retornando o vetor com os resultados
+
+                var notaFinal = [media4, media5];
+                return notaFinal
+            }
+
+                var n1 = parseFloat(prompt("Insira a nota do primeiro bimestre: "));
+                var n2 = parseFloat(prompt("Insira a nota do segundo bimestre: "));             
+                var n3 = parseFloat(prompt("Insira a nota do terceiro bimestre: "));
+                var n4 = parseFloat(prompt("Insira a nota do quarto bimestre: "));         
+                var n5 = parseFloat(prompt("Insira a nota do quinto bimestre: "));           
+            
+            var media4 = notaFinal(n1,n2,n3,n4)[0];
+            
+            var media5 = notaFinal(n1,n2,n3,n4,n5)[1];
+
+            alert("Média com 4 notas: " + media4);
+
+            alert("Média com 5 notas: " + media5);
+        }
+        catch(erro)
+        {
+            alert(erro);
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
